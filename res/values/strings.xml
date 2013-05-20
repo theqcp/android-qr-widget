@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QR Clock Widget</string>
+    <string name="i18n_image_content_description">QR Clock Widget</string>
+    
+</resources>

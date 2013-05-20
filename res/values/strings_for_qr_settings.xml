@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="qr_settings_icon_title">QR Clock Config</string>
+    <string name="qr_settings_title">Settings</string>
+    <string name="qr_settings_menu_title">Settings</string>
+    <string name="qr_settings_button_ok">Accept</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="qr_about_title">QR Clock Widget</string>
+    <string name="qr_about_icon_text">Icon</string>
+    <string name="qr_about_text">The concept for this clock shamelessly stolen from:</string>
+    <string name="qr_about_link">http://ch00ftech.com/2012/10/27/qr-clock/</string>
+
+</resources>

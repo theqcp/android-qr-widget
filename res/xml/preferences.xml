@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="first_category"
+        android:title="Update rate" >
+        <ListPreference
+            android:defaultValue="5000"
+            android:entries="@array/updateInterval"
+            android:entryValues="@array/updateIntervalValues"
+            android:key="updates_interval"
+            android:summary="Define how often updates will be performed"
+            android:title="Updates interval" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="second_category"
+        android:title="Module base size" >
+        <EditTextPreference
+            android:defaultValue="4"
+            android:dialogMessage="Enter a value"
+            android:dialogTitle="Module size"
+            android:key="module_size"
+            android:numeric="integer"
+            android:summary="Define the module size to use when drawing the base image"
+            android:title="Module size" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

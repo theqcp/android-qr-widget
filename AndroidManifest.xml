@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.qcp.droid.qr.clock"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <receiver
+            android:name="org.qcp.droid.qr.clock.QrClockWidget"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/clock_widget_provider" />
+        </receiver>
+
+        <activity
+            android:name="org.qcp.droid.qr.clock.QrSettings"
+            android:label="@string/qr_settings_icon_title" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.qcp.droid.qr.clock.QrAbout" />
+    </application>
+
+</manifest>
